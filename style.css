@@ -1,6 +1,6 @@
 html { width: 100%; height: 100%; }
 body { text-align: center; margin: 0px; padding: 0px; height: 100%; color: #fff; font-family: sans-serif;
-background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+background: linear-gradient(-45deg, #ae2fff, #942ceb, #7322b7, #42136a);
 background-size: 400% 400%;
 -webkit-animation: Gradient 15s ease infinite;
 -moz-animation: Gradient 15s ease infinite;
@@ -25,4 +25,10 @@ img { max-width: 100%; }
 0% {background-position: 0% 50%}
 50% {background-position: 100% 50%}
 100% {background-position: 0% 50%}
+}
+.quadro {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adicione transparência ao fundo se desejar */
 }
