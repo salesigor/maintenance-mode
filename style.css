@@ -1,6 +1,6 @@
 html { width: 100%; height: 100%; }
 body { text-align: center; margin: 0px; padding: 0px; height: 100%; color: #fff; font-family: sans-serif;
-background: linear-gradient(-45deg, #ae2fff, #942ceb, #7322b7, #42136a);
+background: linear-gradient(-45deg, #c57cf3, #942ceb, #4a0d7c, #942ceb);
 background-size: 400% 400%;
 -webkit-animation: Gradient 15s ease infinite;
 -moz-animation: Gradient 15s ease infinite;
@@ -32,4 +32,15 @@ img { max-width: 100%; }
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+}
+.lista-direita {
+    text-align: right;
+}
+
+.lista-direita li {
+    text-align: left;
+}
+.logo {
+    max-width: 150px;
+    height: auto;
 }
