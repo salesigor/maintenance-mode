@@ -30,6 +30,7 @@ img { max-width: 100%; }
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 170px 170px;
 }
 .quadro {
     flex: 1;
@@ -39,6 +40,9 @@ img { max-width: 100%; }
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     margin: 0 5px;
+}
+.quadro:hover {
+    background-color: rgba(255, 255, 255, 0.158);
 }
 .lista-direita {
     text-align: right;
@@ -60,6 +64,9 @@ img { max-width: 100%; }
     height: auto;
 }
 @media screen and (max-width: 600px) {
+    .quadros {
+        padding: 0 20px 20px;
+    }
     .quadro {
         width: 90%;
     }
