@@ -9,8 +9,8 @@ animation: Gradient 15s ease infinite;}
 .vh > div { width: 100%; text-align: center; vertical-align: middle; }
 img { max-width: 100%; }
 .wrap {text-align: center;}
-.wrap h1 {font-size: 30px;font-weight: 700;margin: 0 0 90px;}
-.wrap h2 {font-size: 24px;font-weight: 400;line-height: 1.6;margin: 0 0 80px;}
+.wrap h1 {font-size: 30px;font-weight: 700;margin: 0 0 60px;}
+.wrap h2 {font-size: 24px;font-weight: 400;line-height: 1.6;margin: 0 0 10px;}
 @-webkit-keyframes Gradient {
 0% {background-position: 0% 50%}
 50% {background-position: 100% 50%}
@@ -26,21 +26,41 @@ img { max-width: 100%; }
 50% {background-position: 100% 50%}
 100% {background-position: 0% 50%}
 }
+.quadros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .quadro {
+    flex: 1;
     display: inline-block;
     border: 2px solid #ffffff;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 5px;
 }
 .lista-direita {
     text-align: right;
 }
-
 .lista-direita li {
     text-align: left;
+}
+.lista-direita a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.lista-direita a:hover {
+    color: #43fa82;
+    text-decoration: underline;
 }
 .logo {
     max-width: 150px;
     height: auto;
+}
+@media screen and (max-width: 600px) {
+    .quadro {
+        width: 90%;
+    }
 }
