@@ -27,25 +27,47 @@ img { max-width: 100%; }
 100% {background-position: 0% 50%}
 }
 .quadros {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display:flex;
+    justify-content: center;
     padding: 0px 170px 10px;
 }
 .quadro {
-    flex: 1;
-    display: inline-block;
+    flex-grow: 1;
+    flex-basis: calc(50% - 10px);
+    max-width: calc(50% - 10px);
     border: 2px solid #ffffff;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     margin: 0 5px;
+    transition: height 1s ease;
+}
+.quadr {
+    flex-grow: 1;
+    flex-basis: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 5px;
+    transition: height 1s ease;
 }
 .quadro:hover {
     background-color: rgba(255, 255, 255, 0.158);
+    height: auto;
+}
+.quadro:hover, .quadr:hover {
+    background-color: rgba(255, 255, 255, 0.158);
+    height: auto;
+}
+.quadro:hover .lista-direita, .quadr:hover .lista-direita {
+    display: block;
 }
 .lista-direita {
     text-align: right;
+    display: none;
+    transition: display 1s ease;
 }
 .lista-direita li {
     text-align: left;
