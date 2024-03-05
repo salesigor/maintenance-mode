@@ -27,7 +27,7 @@ img { max-width: 100%; }
 100% {background-position: 0% 50%}
 }
 .quadros {
-    display:flex;
+    display:grid;
     justify-content: center;
     padding-bottom: 30px;
 }
@@ -43,6 +43,7 @@ img { max-width: 100%; }
 }
 .quadro:hover, .quadr:hover {
     background-color: rgba(255, 255, 255, 0.158);
+    transform:scaleX(1.1);
     height: auto;
 }
 .quadro:hover .lista-direita, .quadr:hover .lista-direita {
