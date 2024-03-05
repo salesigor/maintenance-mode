@@ -30,7 +30,7 @@ img { max-width: 100%; }
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 170px 170px;
+    padding: 0px 170px 10px;
 }
 .quadro {
     flex: 1;
@@ -57,7 +57,7 @@ img { max-width: 100%; }
 }
 .lista-direita a:hover {
     color: #43fa82;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .logo {
     max-width: 150px;
